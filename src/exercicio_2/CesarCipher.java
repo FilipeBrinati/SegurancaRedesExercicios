@@ -1,3 +1,4 @@
+package exercicio_2;
 public class CesarCipher {
     // Método para criptografar uma mensagem usando a cifra de César
     public static String encrypt(String message, int shift) {
@@ -17,6 +18,7 @@ public class CesarCipher {
                 encryptedMessage.append(encryptedChar);
             } else {
                 // Se o caractere não for uma letra do alfabeto, adicioná-lo sem criptografar
+            	// So para casos fora do padrão mesmo 
                 encryptedMessage.append(currentChar);
             }
         }

@@ -1,3 +1,4 @@
+package exercicio_1;
 import java.util.HashMap;
 import java.util.Map;
 
