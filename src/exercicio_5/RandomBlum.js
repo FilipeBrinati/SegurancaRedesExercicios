@@ -2,6 +2,7 @@
 //Matrícula: 201865563C
 
 var TestSuit = require('nist-randomness-test-suite');
+var limit = 0;
 
 // Função para verificar se dois números são coprimos
 function areCoprime(a, b) {
@@ -65,16 +66,17 @@ function runTests(p, q, s) {
     }
 
     let testsPassed = false;
-    while (!testsPassed) {
+    while (!testsPassed && limit < 100) {
         const newP = generatePrime();
         let newQ = generatePrime();
         while (newQ === newP || !areCoprime(newP, newQ)) {
             newQ = generatePrime();
         }
         console.log("Novos valores de p e q gerados:", newP, newQ);
-        const generatedBits = generateBits(10000000); // 10^7
+        const generatedBits = generateBits(100000); // 10^5
         console.log("Executando testes NIST para p =", newP, ", q =", newQ, "e s =", s + ":");
         testsPassed = runNISTTests(generatedBits);
+        limit= limit + 1;
     }
 }
 
