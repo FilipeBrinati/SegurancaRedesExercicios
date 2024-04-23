@@ -15,11 +15,9 @@ function modPow(a, b, m) {
 }
 
 // Definindo valores fixos
-//const p = 104729; // Maior numero primo do exercicio 5
-const p = 8083013737; // Numero primo que consegui com um gerador de 10 digitos
+const p = 104729; // Maior numero primo do exercicio 5
 //BigInt(2) ** BigInt(77232917) - BigInt(1); número primo de Mersenne ... Meu note não aguentou, exagerei no grande
-//const g = 12; // Raiz primitiva módulo p
-const g = 5 //primitiva do segundo p, wolframAlpha usado para calcular
+const g = 12; // Raiz primitiva módulo p
 
 console.log('p:', p);
 console.log('g:', g);
