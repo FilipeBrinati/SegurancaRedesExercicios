@@ -1,3 +1,6 @@
+//Nome: Filipe Brinati Furtado
+//Matrícula: 201865563C
+
 // Função para calcular a potência modular (a^b mod m)
 function modPow(a, b, m) {
     let result = 1;
