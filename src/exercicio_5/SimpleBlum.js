@@ -3,7 +3,7 @@ var TestSuit = require('nist-randomness-test-suite');
 // Valores de p e q fornecidos
 const pqsPairs = [
     { p: 10007, q: 10037, s:101 },
-    { p: 15647, q: 17923, s:101}, //Todos os resultados verdadeiros para 10^4 bits
+    { p: 15647, q: 17923, s:101}, //Todos os resultados verdadeiros para 10^4 bits, encontrado usando o random
 ];
 
 // Função para executar os testes com um par de valores p e q
